@@ -1,7 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\http\Controllers\Home;
+use App\http\Controllers\single;
+use App\http\Controllers\Resourcer;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,26 +15,38 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
-route::get('/about' , function(){
-    return view('about');
-});
+Route::get('/home',[Home::class, 'index']);
 
-route::get('/services' , function(){
-    return view('services');
-});
+route::get('/about',[Home::class , 'about']);
 
-route::get('/project' , function(){
-    return view('project');
-});
+route::get('/contact',[Home::class , 'contact']);
 
-route::get('/page' , function(){
-    return view('page');
-});
+route::get('/services',single::class);
 
-route::get('/contact' , function(){
-    return view('contact');
-});
+route::get('/project' ,single::class);
+
+
+
+// route::get('/about' , function(){
+//     return view('about');
+// });
+
+// route::get('/services' , function(){
+//     return view('services');
+// });
+
+// route::get('/project' , function(){
+//     return view('project');
+// });
+
+// route::get('/page' , function(){
+//     return view('page');
+// });
+
+// route::get('/contact' , function(){
+//     return view('contact');
+// });

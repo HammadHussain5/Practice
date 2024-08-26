@@ -71,8 +71,7 @@
                             <a href="about" class="nav-item nav-link">About</a>
                             <a href="services" class="nav-item nav-link active">Services</a>
                             <a href="project" class="nav-item nav-link">Projects</a>
-
-                            <a href="Contact.blade.php" class="nav-item nav-link">Contact</a>
+                             <a href="Contact" class="nav-item nav-link">Contact</a>
                         </div>
                     </div>
                     <div class="d-none d-xl-flex flex-shirink-0">
