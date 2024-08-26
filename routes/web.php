@@ -19,7 +19,7 @@ use App\http\Controllers\Resourcer;
 //     return view('welcome');
 // });
 
-Route::get('/home',[Home::class, 'index']);
+Route::get('/',[Home::class, 'index']);
 
 route::get('/about',[Home::class , 'about']);
 
@@ -28,7 +28,6 @@ route::get('/contact',[Home::class , 'contact']);
 route::get('/services',single::class);
 
 route::get('/project' ,single::class);
-
 
 
 // route::get('/about' , function(){
